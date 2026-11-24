@@ -1,0 +1,147 @@
+/* reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0px 0px;
+}
+
+/* root */
+:root {
+	--blaat: #0909c0;
+	--white: #ffffff;
+	--black: #000000;
+	/* background-color: #1c1c1c; */
+}
+
+/* fonts */
+
+h1,
+h2,
+h3,
+h5,
+a,
+p {
+	font-family: "Baskervville", serif;
+	color: var(--blaat);
+	font-weight: 100;
+}
+
+h1 {
+	font-size: 36px;
+	letter-spacing: -4px;
+	place-self: center;
+}
+
+h2 {
+	font-size: 17px;
+	font-style: italic;
+	line-height: 100%;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+h4 {
+	color: var(--blaat);
+	font-family: "Inconsolata", monospace;
+	font-weight: 400;
+	font-size: 10px;
+}
+
+p {
+	font-size: 17px;
+	line-height: 100%;
+	hyphens: auto;
+	/* laver lige margener */
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+a {
+	font-weight: 600;
+}
+
+a:hover,
+a:visited {
+	opacity: 10%;
+}
+
+strong,
+b {
+	font-weight: bold;
+}
+
+.script {
+	font-family: "parfumerie-script", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 12cqw;
+}
+
+.fino {
+	font-family: "fino", serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 18cqw;
+	text-transform: uppercase;
+	font-style: italic;
+}
+
+.sans-serif {
+	font-family: sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 100%;
+}
+
+.noline {
+	text-decoration: none;
+}
+
+/* layout */
+
+.grid {
+	display: grid;
+}
+
+.gridcenter {
+	place-self: center;
+}
+
+.flex {
+	display: flex;
+}
+
+/* laver indryk i første linje */
+.indent {
+	text-indent: 25px;
+	margin-top: 1px;
+}
+
+/* desktop */
+
+@media (min-width: 600px) {
+	#intro,
+	#essay-body,
+	#links {
+		margin: 0 25%;
+		width: 50%;
+	}
+
+	#essay-body,
+	#essay-body p,
+	#essay-body a {
+		max-width: 100%;
+		overflow-wrap: anywhere;
+		word-break: break-word;
+	}
+}

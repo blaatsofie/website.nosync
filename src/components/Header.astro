@@ -1,0 +1,53 @@
+---
+import logoblue from "../assets/logo-blue.svg";
+---
+
+<header class="grid">
+	<a href="../"><img src={logoblue.src} alt="" /></a>
+</header>
+
+<style>
+	header {
+		width: 50vw;
+		height: auto;
+		justify-self: center;
+		position: sticky;
+		top: 0;
+	}
+	img {
+		width: 100%;
+		height: auto;
+		justify-self: center;
+		opacity: 20%;
+	}
+	img:hover,
+	a:hover {
+		opacity: 100%;
+	}
+
+	@media (min-width: 600px) {
+		header {
+			width: 100vw;
+		}
+	}
+</style>
+
+<!-- <style>
+	header {
+		width: 50vw;
+		height: auto;
+		justify-self: center;
+		position: sticky;
+		margin-top: 30vh;
+		top: 0;
+	}
+	img {
+		width: 100%;
+		height: auto;
+		justify-self: center;
+		opacity: 20%;
+	}
+	img:hover {
+		opacity: 100%;
+	}
+</style> -->

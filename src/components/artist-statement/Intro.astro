@@ -1,0 +1,83 @@
+---
+import wash from "../../assets/wash.jpg";
+import lace from "../../assets/lace.jpg";
+---
+
+<div id="intro" class="grid">
+	<div class="grid" id="brand-div">
+		<img id="wash" src={wash.src} alt="" />
+		<h1>i am not a brand</h1>
+	</div>
+	<p>an essay by blaatsofie</p>
+	<div>
+		<h2 id="exploration">
+			this is an exploration on being an artist and dreaming of a creative life, in a capitalist
+			society that prioritises algorithms, personal brands and art for money
+		</h2>
+	</div>
+	<div id="lace-box" class="grid">
+		<img src={lace.src} alt="" />
+	</div>
+</div>
+
+<style>
+	#brand-div {
+		place-self: center;
+		margin-top: 20vh;
+	}
+	p {
+		font-size: 11px;
+		place-self: center;
+	}
+	#wash {
+		grid-column: 1/2;
+		grid-row: 1/2;
+		width: auto;
+		height: 160px;
+		place-self: center;
+	}
+	h1 {
+		grid-column: 1/2;
+		grid-row: 1/2;
+		place-self: center;
+	}
+	#exploration {
+		padding: 7vh 30px;
+		text-align: center;
+	}
+
+	#lace-box {
+		margin: 50px 0 10px 0;
+	}
+
+	@media (min-width: 600px) {
+		#brand-div {
+			margin-top: 5vh;
+		}
+
+		p {
+			font-size: 14px;
+		}
+
+		#wash {
+			height: 200px;
+		}
+
+		h1 {
+			font-size: 42px;
+		}
+
+		h2 {
+			font-size: 19px;
+		}
+
+		#exploration {
+			padding: 10vh 15%;
+			text-align: center;
+		}
+
+		#lace-box {
+			margin-bottom: 15px;
+		}
+	}
+</style>

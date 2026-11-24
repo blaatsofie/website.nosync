@@ -1,0 +1,36 @@
+---
+const { background } = Astro.props;
+const { color } = Astro.props;
+---
+
+<footer class=`grid ${background}`>
+	<h4 class=`${color}`>
+		this site is designed, coded and owned by <strong>blaatsofie</strong> herself
+	</h4>
+	<h5 class=`${color}`>*** <strong>no ai</strong> was used in the process ***</h5>
+</footer>
+
+<style>
+	.white {
+		background-color: var(--white);
+	}
+
+	.blaat {
+		color: var(--blaat);
+	}
+
+	footer {
+		background-color: var(--blaat);
+		padding: 10px 2px;
+		margin-top: 5px;
+	}
+	h4,
+	h5 {
+		color: var(--white);
+		font-family: "Inconsolata", monospace;
+		place-self: center;
+		text-align: center;
+		font-size: 8px;
+		font-weight: 300;
+	}
+</style>
